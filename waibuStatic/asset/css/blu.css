@@ -1,0 +1,33 @@
+:root {
+  --blu-color-body: #f5f6f8;
+  --blu-color-header: #5b73e8;
+  --blu-color-body-alt: rgba(91, 140, 232, .25);
+}
+
+body:not([data-bs-theme="dark"]).bg-alt {
+  background-color: var(--blu-color-body-alt);
+}
+
+body:not([data-bs-theme="dark"]) {
+  background-color: var(--blu-color-body);
+}
+
+.header {
+  background-color: var(--blu-color-header);
+}
+
+[data-bs-theme="dark"] .header {
+  background-color: var(--bs-black);
+}
+
+[data-bs-theme="dark"] .header .main-navbar {
+  background-color: var(--bs-dark-bg-subtle);
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: var(--bs-dark-bg-subtle);
+}
+
+body:not([data-bs-theme="dark"]) .header .main-navbar {
+  background-color: var(--bs-light);
+}

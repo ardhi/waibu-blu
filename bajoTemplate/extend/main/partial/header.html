@@ -1,0 +1,21 @@
+<c:div class="header" position="type:sticky-top" margin="bottom-4">
+  <c:container>
+    <c:navbar expandable>
+      <a href="/" class="navbar-brand" >
+        <c:img src="waibuMpa:/logo/main?type=med-light" height="40" display="type:none type:block-md"/>
+        <c:img src="waibuMpa:/logo/main?type=light" height="50" display="type:none-md"/>
+      </a>
+      <c:nav tag="ul">
+      </c:nav>
+      <c:nav tag="ul" dim="width:100" flex="justify-content:end">
+        <% if (_meta.isAdmin) { %>
+        <c:btn color="danger" href="waibuAdmin:/" t:content="adminArea" margin="end-3"/>
+        <% } %>
+        <c:nav-toggle-fullscreen text="color:light" />
+        <c:nav-dropdown-darkmode dropdown-menudir="end" text="color:light" />
+        <c:nav-dropdown-language dropdown-menudir="end" text="color:light"/>
+      </c:nav>
+    </c:navbar>
+    <!-- include main.partial:/main-navbar.html -->
+  </c:container>
+</c:div>

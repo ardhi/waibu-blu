@@ -1,0 +1,24 @@
+<c:navbar class="main-navbar" rounded border shadow="sm" style="top:20px" margin="bottom-5">
+  <c:nav tag="ul">
+    <% for (const cat of menu.pages) { %>
+      <% if (cat.children) { %>
+      <c:nav-item t:content="<%= cat.title %>" dropdown>
+        <% for (const child of cat.children) { %>
+          <% if (child.visible === 'anon' && _meta.user) continue %>
+          <% if (child.visible === 'auth' && !_meta.user) continue %>
+          <% if (child.title === '-') { %>
+          <c:dropdown-item divider />
+          <% } else { %>
+          <c:dropdown-item href="<%= child.href %>" t:content="<%= child.title %>" />
+          <% } %>
+        <% } %>
+      </c:nav-item>
+      <% } else { %>
+      <c:nav-item t:content="<%= cat.title %>" href="<%= cat.href %>" <%= cat.icon ? 'icon="' + cat.icon + '"' : '' %> />
+      <% } %>
+    <% } %>
+  </c:nav>
+  <c:nav tag="ul">
+    <c:nav-dropdown-user title dropdown-menudir="end"/>
+  </c:nav>
+</c:navbar>

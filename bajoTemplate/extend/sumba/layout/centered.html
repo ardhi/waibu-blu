@@ -1,0 +1,25 @@
+<c:page-start body-class="bg-alt" />
+<c:main>
+  <c:container>
+    <c:div flex="align-items:center justify-content:center" dim="height:viewport">
+      <c:grid-row dim="width:100">
+        <c:grid-col col="3-lg 2-md"></c:grid-col>
+        <c:grid-col col="6-lg 8-md">
+          <c:div flex="justify-content:center">
+            <a href="https://maritime.rapp.id">
+              <c:img src="waibuMpa:/logo/main?type=full<%= _meta.darkMode ? '-light' : '' %>" height="30" />
+            </a>
+          </c:div>
+          <c:card shadow margin="top-5">
+            <c:card-body>
+              <c:heading margin="bottom-4" text="align:center color:primary" type="5-display" content="<%= page.title %>" />
+              <!-- body -->
+            </c:card-body>
+          </c:card>
+          <!-- include sumba.partial:/layout/footer.html -->
+        </c:grid-col>
+        <c:grid-col col="3-lg 2-md"></c:grid-col>
+      </c:grid-row>
+  </c:container>
+</c:main>
+<c:page-end />
