@@ -2,7 +2,10 @@
 <c:main>
   <!-- include main.partial:/header.html -->
   <c:container>
-    <c:heading type="4" content="<%= page.title %>" />
+    <c:div flex="justify-content:between">
+      <c:heading type="4" content="<%= page.title %>" />
+      <c:div id="heading-end"></c:div>
+    </c:div>
     <c:card shadow="sm" border="none">
       <c:card-body>
         <!-- body -->

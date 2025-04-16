@@ -4,8 +4,6 @@
       <% if (cat.children) { %>
       <c:nav-item t:content="<%= cat.title %>" dropdown>
         <% for (const child of cat.children) { %>
-          <% if (child.visible === 'anon' && _meta.user) continue %>
-          <% if (child.visible === 'auth' && !_meta.user) continue %>
           <% if (child.title === '-') { %>
           <c:dropdown-item divider />
           <% } else { %>
