@@ -31,3 +31,7 @@ body:not([data-bs-theme="dark"]) {
 body:not([data-bs-theme="dark"]) .header .main-navbar {
   background-color: var(--bs-light);
 }
+
+.wmaps {
+  background-image: url(../images/universe.jpg);
+}
