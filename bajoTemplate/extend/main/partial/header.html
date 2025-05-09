@@ -11,9 +11,12 @@
         <% if (_meta.isAdmin) { %>
         <c:btn color="danger" href="waibuAdmin:/" t:content="adminArea" margin="end-3"/>
         <% } %>
-        <c:nav-toggle-fullscreen text="color:light" />
+        <% if (_hasPlugin('sumbaGeofence')) { %>
+        <c:geofence-alert dropdown-menudir="end" text="color:light" />
+        <% } %>
         <c:nav-dropdown-darkmode dropdown-menudir="end" text="color:light" />
         <c:nav-dropdown-language dropdown-menudir="end" text="color:light"/>
+        <c:nav-toggle-fullscreen text="color:light" />
       </c:nav>
     </c:navbar>
     <!-- include main.partial:/main-navbar.html -->
