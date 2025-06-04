@@ -1,4 +1,8 @@
-<c:wdb-form tag="div" id="main-form" />
+<c:wdb-form tag="div" id="main-form">
+  <% if (schema.view.attachment) { %>
+  <!-- include waibuDb.partial:/crud/_details-attachment.html -->
+  <% } %>
+</c:wdb-form>
 <c:card>
   <c:card-body>
     <!-- include waibuDb.partial:/crud/_details-btns.html -->
