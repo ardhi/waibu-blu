@@ -1,6 +1,6 @@
 {
   "name": "waibu-blu",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Blu theme for Waibu Framework",
   "main": "index.js",
   "scripts": {
