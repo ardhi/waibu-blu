@@ -1,7 +1,7 @@
 async function factory (pkgName) {
   const me = this
 
-  class WaibuBlu extends this.lib.Plugin {
+  class WaibuBlu extends this.app.pluginClass.base {
     static alias = 'wblu'
     static dependencies = ['waibu-mpa', 'waibu-bootstrap']
 
