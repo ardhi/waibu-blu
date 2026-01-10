@@ -9,7 +9,12 @@
   },
   "type": "module",
   "bajo": {
-    "type": "plugin"
+    "type": "plugin",
+    "alias": "wblu",
+    "dependencies": [
+      "waibu-mpa",
+      "waibu-bootstrap"
+    ]
   },
   "repository": {
     "type": "git",
