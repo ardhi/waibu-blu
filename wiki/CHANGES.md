@@ -1,5 +1,10 @@
 # Changes
 
+## 2026-02-09
+
+- [2.2.0] Start using simplified ```webAppCtx```
+- [2.2.0] Template reposition
+
 ## 2026-02-06
 
 - [2.1.1] Bug fix on templates
