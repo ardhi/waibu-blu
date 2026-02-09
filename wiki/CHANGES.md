@@ -4,6 +4,7 @@
 
 - [2.2.0] Start using simplified ```webAppCtx```
 - [2.2.0] Template reposition
+- [2.2.1] Bug fix on common templates
 
 ## 2026-02-06
 
