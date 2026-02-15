@@ -1,5 +1,9 @@
 # Changes
 
+## 2026-02-15
+
+- [2.3.0] Template folder relocations
+
 ## 2026-02-09
 
 - [2.2.0] Start using simplified ```webAppCtx```
