@@ -1,5 +1,9 @@
 # Changes
 
+## 2026-03-17
+
+- [2.4.0] Add menu header
+
 ## 2026-02-15
 
 - [2.3.0] Template folder relocations

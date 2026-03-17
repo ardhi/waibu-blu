@@ -6,6 +6,8 @@
         <% for (const child of cat.children) { %>
           <% if (child.title === '-') { %>
           <c:dropdown-item divider />
+          <% } else if (child.header) { %>
+          <c:dropdown-item header t:content="<%= child.title %>" />
           <% } else { %>
           <c:dropdown-item href="<%= child.href %>" t:content="<%= child.title %>" />
           <% } %>
