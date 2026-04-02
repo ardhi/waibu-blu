@@ -1,5 +1,9 @@
 # Changes
 
+## 2026-04-02
+
+- [2.4.1] Bug fix in show warnings template
+
 ## 2026-03-17
 
 - [2.4.0] Add menu header
