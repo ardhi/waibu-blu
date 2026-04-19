@@ -1,5 +1,9 @@
 # Changes
 
+## 2026-04-19
+
+- [2.4.3] Update all widgets ```wdb-table``` to ```wdb-data-table```
+
 ## 2026-04-02
 
 - [2.4.1] Bug fix in show warnings template
