@@ -8,8 +8,10 @@
       <c:nav tag="ul">
       </c:nav>
       <c:nav tag="ul" dim="width:100" flex="justify-content:end">
-        <% if (_meta.isAdmin) { %>
+        <% if (_.get(_meta, 'user.isAdmin')) { %>
         <c:btn color="danger" href="waibuAdmin:/" t:content="adminArea" margin="end-3"/>
+        <% } else if (_.get(_meta, 'user.isXSiteAdmin')) { %>
+        <c:btn color="danger" href="waibuAdmin:/" t:content="xSiteAdminArea" margin="end-3"/>
         <% } %>
         <% if (_hasPlugin('sumbaGeofence')) { %>
         <c:geofence-nav-dropdown-alert dropdown-menu-dir="end" text="color:light" />

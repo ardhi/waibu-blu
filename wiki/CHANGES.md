@@ -1,5 +1,9 @@
 # Changes
 
+## 2026-05-22
+
+- [2.5.0] Add button for user with ```isXSiteAdmin```
+
 ## 2026-04-19
 
 - [2.4.3] Update all widgets ```wdb-table``` to ```wdb-data-table```
