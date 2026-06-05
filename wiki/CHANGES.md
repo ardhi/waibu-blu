@@ -1,5 +1,11 @@
 # Changes
 
+## 2026-06-05
+
+- [2.6.0] Add ```_common/main/layout/default.html```
+- [2.6.0] Add ```_common/waibuMpa/partial/500.html```
+- [2.6.0] Add ```_common/waibuMpa/partial/400.html```
+
 ## 2026-05-22
 
 - [2.5.0] Add button for user with ```isXSiteAdmin```
