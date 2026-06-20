@@ -1,5 +1,11 @@
 <c:card shadow="sm">
-  <c:card-body text="background:danger">
-    <%= error.message %>
+  <c:card-body>
+    <c:div padding="all-5" text="align:center">
+      <c:heading type="1-display" text="color:danger">500</c:heading>
+      <c:heading type="6-display" text="color:danger"><%= _t('internalServerError') %></c:heading>
+      <c:div padding="top-5">
+        <%= _t('internalServerErrorDesc') %>
+      </c:div>
+    </c:div>
   </c:card-body>
 </c:card>

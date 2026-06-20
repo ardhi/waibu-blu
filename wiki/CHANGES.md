@@ -1,5 +1,10 @@
 # Changes
 
+## 2026-06-20
+
+- [2.7.0] Add ```403.html```
+- [2.7.0] Rename ```400.html``` to ```404.html```
+
 ## 2026-06-05
 
 - [2.6.0] Add ```_common/main/layout/default.html```
